@@ -1,0 +1,20 @@
+div.clock-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 50vh;
+
+}
+
+#stopwatch {
+    margin: auto auto 0px auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+
+}

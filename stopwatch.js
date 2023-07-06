@@ -26,6 +26,7 @@ function resetClock() {
     time=0;
 }
 
+
 function getTimeFormatString() {
     hour=parseInt(String(time / (60*60)));
     min=parseInt(String((time - (hour*60*60))/60));

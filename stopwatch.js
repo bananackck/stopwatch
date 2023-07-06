@@ -3,18 +3,18 @@ let time = 0;
 const stopwatch = document.getElementById("stopwatch");
 let hour, min, sec;
 
-function printTime(){
+function printTime() {
     time++;
     stopwatch.innerText = getTimeFormatString();
 }
 
-function startClock(){
+function startClock() {
     printTime();
     stopClock();
     timerId = setTimeout(startClock, 1000);
 }
 
-function stopClock(){
+function stopClock() {
     if(timerId != null){
         clearTimeout(timerId);
     }
@@ -26,7 +26,7 @@ function resetClock() {
     time=0;
 }
 
-function getTimeFormatString(){
+function getTimeFormatString() {
     hour=parseInt(String(time / (60*60)));
     min=parseInt(String((time-(hour*60*60))/60));
     sec = time % 60;
